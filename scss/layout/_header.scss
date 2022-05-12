@@ -1,0 +1,61 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	width:100%;
+	min-width: $min-width;
+	text-align:left;	
+	order: 1;	
+    -webkit-order: 1;	
+    background: #fff;
+}
+
+.header{
+	&__box{
+		padding: 30px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.logo{
+	width: 120px;
+	&__img{
+		display: block;
+		width: 100%;
+	}
+}
+.nav{
+	&__link{
+		font-size: 1.8rem;
+		font-weight: 300;
+		display: inline-block;
+		margin-right: 5.8rem;
+		border-bottom: 1px solid transparent;
+		line-height: 1;
+		&:hover{
+			border-bottom-color: #000;
+		}
+	}
+}
+.button{
+	border: 1px solid #E9ECF5;
+	border-radius: 6px;
+	color: #446DF6;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	background: #fff;
+	padding: 17px 25px 11px 25px;
+	&:hover{
+		border-color: #446DF6;
+		color: #fff;
+		background: #446DF6;
+	}
+}
+@media screen and (max-width: 370px) {
+   
+}

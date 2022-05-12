@@ -1,0 +1,129 @@
+/* Gotham Pro */
+// @font-face {
+// 	font-family: 'GothamPro';
+// 	src: url('../fonts/GothamPro/GothamProBlack.eot');
+// 	src: url('../fonts/GothamPro/GothamProBlack.eot?#iefix') format('embedded-opentype'),
+// 	url('../fonts/GothamPro/GothamProBlack.woff') format('woff'),
+// 	url('../fonts/GothamPro/GothamProBlack.ttf') format('truetype'),
+// 	url('../fonts/GothamPro/GothamProBlack.svg#GothamProBlack') format('svg');
+// 	font-weight: 900;
+// 	font-style: normal;
+// 	font-stretch: normal;
+// 	unicode-range: U+0020-FFFD;
+// }
+
+/* Gotham Pro */
+
+
+@font-face {
+	font-family:'GT Eesti Pro Display';
+	src: url('../fonts/GTEestiProDisplay-Regular.eot');
+	src: url('../fonts/GTEestiProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GTEestiProDisplay-Regular.ttf') format('truetype'),
+	url('../fonts/GTEestiProDisplay-Regular.otf') format('opentype'),
+	url('../fonts/GTEestiProDisplay-Regular.svg#GTEestiProDisplay-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0527;
+}
+@font-face {
+	font-family:'GT Eesti Pro Display';
+	src: url('../fonts/GTEestiProDisplay-Medium.eot');
+	src: url('../fonts/GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GTEestiProDisplay-Medium.ttf') format('truetype'),
+	url('../fonts/GTEestiProDisplay-Medium.otf') format('opentype'),
+	url('../fonts/GTEestiProDisplay-Medium.svg#GTEestiProDisplay-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0527;
+}
+@font-face {
+	font-family:'GT Eesti Pro Display';
+	src: url('../fonts/GTEestiProDisplay-Light.eot');
+	src: url('../fonts/GTEestiProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GTEestiProDisplay-Light.ttf') format('truetype'),
+	url('../fonts/GTEestiProDisplay-Light.otf') format('opentype'),
+	url('../fonts/GTEestiProDisplay-Light.svg#GTEestiProDisplay-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0527;
+}
+
+// icomoon
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ptyca6');
+  src:  url('../fonts/icomoon.eot?ptyca6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ptyca6') format('truetype'),
+    url('../fonts/icomoon.woff?ptyca6') format('woff'),
+    url('../fonts/icomoon.svg?ptyca6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e90a";
+  color: #446df6;
+}
+.icon-Star:before {
+  content: "\e900";
+  color: #446df6;
+}
+.icon-Wallet:before {
+  content: "\e901";
+  color: #446df6;
+}
+.icon-Calendar:before {
+  content: "\e902";
+  color: #446df6;
+}
+.icon-Call:before {
+  content: "\e903";
+  color: #c0c0c0;
+}
+.icon-Chat:before {
+  content: "\e904";
+  color: #446df6;
+}
+.icon-Document:before {
+  content: "\e905";
+  color: #446df6;
+}
+.icon-Download:before {
+  content: "\e906";
+  color: #446df6;
+}
+.icon-Edit:before {
+  content: "\e907";
+  color: #c0c0c0;
+}
+.icon-Filter:before {
+  content: "\e908";
+  color: #446df6;
+}
+.icon-Message:before {
+  content: "\e909";
+  color: #c0c0c0;
+}
+
+
+
