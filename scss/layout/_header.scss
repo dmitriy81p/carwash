@@ -15,7 +15,7 @@ header{
 
 .header{
 	&__box{
-		padding: 30px 0;
+		padding: 25px 0;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -30,11 +30,14 @@ header{
 	}
 }
 .nav{
+	padding-left: 10.8rem;
+	position: relative;
+	top: 2px;
 	&__link{
 		font-size: 1.8rem;
 		font-weight: 300;
 		display: inline-block;
-		margin-right: 5.8rem;
+		margin-right: 5.6rem;
 		border-bottom: 1px solid transparent;
 		line-height: 1;
 		&:hover{
@@ -43,6 +46,7 @@ header{
 	}
 }
 .button{
+	display: inline-block;
 	border: 1px solid #E9ECF5;
 	border-radius: 6px;
 	color: #446DF6;
@@ -55,6 +59,7 @@ header{
 		color: #fff;
 		background: #446DF6;
 	}
+
 }
 @media screen and (max-width: 370px) {
    

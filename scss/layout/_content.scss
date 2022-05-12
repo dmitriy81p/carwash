@@ -43,7 +43,7 @@ h1{
 	@include font($font-size-h1,$line-height-h1,$title-color);
 	font-family: $title-font-family;
 	padding: 15px 0 15px 0;
-	font-weight: 700;	
+	font-weight: 400;	
 }
 h2{
 	@include font($font-size-h2,$line-height-h2,$title-color);
@@ -109,30 +109,47 @@ ul{
 	-webkit-flex-grow: 1;
 	position: relative;
 	z-index: 2;
-	&__box{
-			background-image: url(../img/bg_1.png);
-		
-		&:before{
-			content: "";
-			background-image: url(../img/bg_1.png);
-			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: 2;
-			width: 100%;
-		}
-		&:after{
-			content: "";
-			background-image: url(../img/bg_2.png);
-			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: 2;
-		}
-	}
 }
 
-
+.top-screen{
+	padding: 111px 0 120px;
+	width: 100%;
+	max-width: 550px;
+	&__descr{
+		font-size: 2.4rem;
+		line-height: 1.4;
+		font-weight: 300;
+		color: #72727E;
+		padding: 10px 0 10px;
+	}
+	&__decor{
+		position: absolute;
+		top: 23px;
+    right: -6.3%;
+	}
+	&__btn{
+		margin-top: 3.9rem;
+	}
+}
+.icon-arrow{
+	font-size: 2.4rem;
+	position: relative;
+	left: 4px;
+	line-height: 1;
+}
+.button_2{
+	color: #eee;
+	background: #446DF6;
+	border-right-color: #446DF6;
+	font-size: 1.8rem;
+	font-weight: 500;
+	padding: 21px 50px 17px 50px;
+	&:hover{
+		color: #446DF6;
+		background: #fff;
+		border-color: #E9ECF5;
+	}
+}
 @media screen and (max-width: 500px){
 
 }
