@@ -6,9 +6,20 @@ $(window).on('load', function () {
 	};
 	$('body').removeClass('loaded');
 });
-
+if($('.slider').length) {
+		$('.slider').slick({
+			dots: false,
+			infinite: true,
+			arrows: true,
+			speed: 300,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-button slick-button_prev"><span class="icon icon-arrow-prev"></span></div>',
+			nextArrow: '<div class="slick-button slick-button_next"><span class="icon icon-arrow-next"></span></div>',
+		});
+	};
 /* viewport width */
-function viewport(){
+function viewport(){ 
 	var e = window, 
 	a = 'inner';
 	if ( !( 'innerWidth' in window ) )

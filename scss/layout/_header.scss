@@ -6,6 +6,7 @@
 */
 header{
 	width:100%;
+	height: 94px;
 	min-width: $min-width;
 	text-align:left;	
 	order: 1;	
@@ -30,14 +31,14 @@ header{
 	}
 }
 .nav{
-	padding-left: 10.8rem;
+	padding-left: 108px;
 	position: relative;
 	top: 2px;
 	&__link{
 		font-size: 1.8rem;
 		font-weight: 300;
 		display: inline-block;
-		margin-right: 5.6rem;
+		margin-right: 54px;
 		border-bottom: 1px solid transparent;
 		line-height: 1;
 		&:hover{
@@ -51,15 +52,30 @@ header{
 	border-radius: 6px;
 	color: #446DF6;
 	font-size: 1.6rem;
-	line-height: 1.2;
+	line-height: 1;
 	background: #fff;
-	padding: 17px 25px 11px 25px;
+	padding: 17px 25px 0px 25px;
+	height: 50px;
 	&:hover{
 		border-color: #446DF6;
 		color: #fff;
 		background: #446DF6;
 	}
-
+}
+.button_2{
+	color: #eee;
+	background: #446DF6;
+	border-right-color: #446DF6;
+	font-size: 1.7rem;
+	font-weight: 500;
+	padding: 23px 55px 15px 55px;
+	height: 62px;
+	font-weight: 500;
+	&:hover{
+		color: #446DF6;
+		background: #fff;
+		border-color: #E9ECF5;
+	}
 }
 @media screen and (max-width: 370px) {
    

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ptyca6');
-  src:  url('fonts/icomoon.eot?ptyca6#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ptyca6') format('truetype'),
-    url('fonts/icomoon.woff?ptyca6') format('woff'),
-    url('fonts/icomoon.svg?ptyca6#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?316hkm');
+  src:  url('fonts/icomoon.eot?316hkm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?316hkm') format('truetype'),
+    url('fonts/icomoon.woff?316hkm') format('woff'),
+    url('fonts/icomoon.svg?316hkm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,47 +25,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow:before {
-  content: "\e90a";
-  color: #446df6;
-}
-.icon-Star:before {
+.icon-document:before {
   content: "\e900";
   color: #446df6;
 }
-.icon-Wallet:before {
+.icon-download:before {
   content: "\e901";
   color: #446df6;
 }
-.icon-Calendar:before {
+.icon-edit:before {
   content: "\e902";
-  color: #446df6;
-}
-.icon-Call:before {
-  content: "\e903";
   color: #c0c0c0;
 }
-.icon-Chat:before {
+.icon-filter:before {
+  content: "\e903";
+  color: #446df6;
+}
+.icon-location:before {
   content: "\e904";
   color: #446df6;
 }
-.icon-Document:before {
+.icon-message:before {
   content: "\e905";
-  color: #446df6;
+  color: #c0c0c0;
 }
-.icon-Download:before {
+.icon-star:before {
   content: "\e906";
   color: #446df6;
 }
-.icon-Edit:before {
+.icon-wallet:before {
   content: "\e907";
-  color: #c0c0c0;
+  color: #446df6;
 }
-.icon-Filter:before {
+.icon-arrow:before {
   content: "\e908";
   color: #446df6;
 }
-.icon-Message:before {
+.icon-arrow_down:before {
   content: "\e909";
+  color: #446df6;
+}
+.icon-arrow-next:before {
+  content: "\e90a";
+  color: #72727e;
+}
+.icon-arrow-prev:before {
+  content: "\e90b";
+  color: #72727e;
+}
+.icon-calendar:before {
+  content: "\e90c";
+  color: #446df6;
+}
+.icon-call:before {
+  content: "\e90d";
   color: #c0c0c0;
+}
+.icon-chat:before {
+  content: "\e90e";
+  color: #446df6;
 }
