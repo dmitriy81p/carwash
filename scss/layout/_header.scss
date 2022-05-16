@@ -24,21 +24,21 @@ header{
 	}
 }
 .logo{
-	width: 120px;
+	width: 12rem;
 	&__img{
 		display: block;
 		width: 100%;
 	}
 }
 .nav{
-	padding-left: 108px;
+	padding-left: 10.8rem;
 	position: relative;
 	top: 2px;
 	&__link{
 		font-size: 1.8rem;
 		font-weight: 300;
 		display: inline-block;
-		margin-right: 54px;
+		margin-right: 5.4rem;
 		border-bottom: 1px solid transparent;
 		line-height: 1;
 		&:hover{
@@ -54,8 +54,8 @@ header{
 	font-size: 1.6rem;
 	line-height: 1;
 	background: #fff;
-	padding: 17px 25px 0px 25px;
-	height: 50px;
+	padding: 1.7rem 2.5rem 0px 2.5rem;
+	height: 5rem;
 	&:hover{
 		border-color: #446DF6;
 		color: #fff;
@@ -68,8 +68,8 @@ header{
 	border-right-color: #446DF6;
 	font-size: 1.7rem;
 	font-weight: 500;
-	padding: 23px 55px 15px 55px;
-	height: 62px;
+	padding: 2.3rem 5.5rem 1.5rem 5.5rem;
+	height: 6.2rem;
 	font-weight: 500;
 	&:hover{
 		color: #446DF6;
@@ -77,6 +77,6 @@ header{
 		border-color: #E9ECF5;
 	}
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 1200px) {
    
 }
