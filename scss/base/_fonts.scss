@@ -80,6 +80,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check:before {
+  content: "\e90f";
+  color: #446df6;
+}
 .icon-document:before {
   content: "\e900";
   color: #446df6;
@@ -140,4 +144,3 @@
   content: "\e90e";
   color: #446df6;
 }
-

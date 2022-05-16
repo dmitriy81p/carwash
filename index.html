@@ -25,17 +25,20 @@
 					<div class="top-screen__info">
 						<h1>
 							Поиск ближайшей свободной автомойки и бронирование
-							на удобное время. <span class="icon-arrow"></span>
+							на удобное время. <span class="icon-arrow desct"></span>
 						</h1>
+						<span class="icon icon-arrow_down mob"></span>
 						<p class="top-screen__descr">
 							Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.
 						</p>
 						<div class="top-screen__btn">
-							<a href="#" class="button button_2">Получить доступ</a>
+							<a data-fancybox href="#win_1" class="button button_2">Получить доступ</a>
 						</div>
 					</div>
 					<div class="top-screen__decor">
-						<img src="img/bg_1.png" alt="alt">
+						<img class="desct" src="img/bg_1.png" alt="alt">
+						<img class="mob top-screen__decor-tel" src="img/bg_1-mob.png" alt="alt">
+						<img class="mob top-screen__decor-bubl" src="img/bg_1-mob-bubl.png" alt="alt">
 					</div>
 				</div>
 				<div class="start">
@@ -114,7 +117,7 @@
 						</li>
 					</ul>
 					<div class="partners__btn">
-						<a href="#" class="button button_2">Стать партнером</a>
+						<a data-fancybox href="#win_1" class="button button_2">Стать партнером</a>
 					</div>
 				</div>
 				<div class="app">
@@ -155,7 +158,7 @@
 						</div>
 						<div class="slider__item">
 							<p class="slider__text">"Буду бить аккуратно, но сильно!";
-								"Дитям – мороженое, его бабе – цветы! Смотри не перепутай, Кутузов!"; "На чужой счёт пьют даже трезвенники… и язвенники!"; "Начинаю действовать бэз шуму и пыли по вновь утверждённому плану!";</p>
+							"Дитям – мороженое, его бабе – цветы! Смотри не перепутай, Кутузов!"; "На чужой счёт пьют даже трезвенники… и язвенники!"; "Начинаю действовать бэз шуму и пыли по вновь утверждённому плану!";</p>
 							<div class="slider__human">
 								<div class="slider__human-photo">
 									<img src="img/photo2.jpg" alt="alt">
@@ -213,15 +216,23 @@
 
 		<header class="header">
 			<div class="wrapper">
+				<a class="burger js-touch-menu" href="#">
+					<span></span>
+				</a>
 				<div class="header__box">
 					<div class="logo"><img class="logo__img" src="img/logo.svg" alt="logo"></div>
-					<nav class="nav">
-						<a href="#" class="nav__link">Как использовать </a>
-						<a href="#" class="nav__link">Партнерам</a>
-						<a href="#" class="nav__link">Скачать</a>
-						<a href="#" class="nav__link">Отзывы</a>
-					</nav>
-					<a href="#" class="button">Получить доступ</a>
+					<div class="nav-mob">
+						<nav class="nav">
+							<a href="#" class="nav__link">Как использовать </a>
+							<a href="#" class="nav__link">Партнерам</a>
+							<a href="#" class="nav__link">Скачать</a>
+							<a href="#" class="nav__link">Отзывы</a>
+						</nav>
+						<div class="btn-mob">
+							<a data-fancybox href="#win_1"class="button button_2">Получить доступ</a>
+						</div>
+						<a data-fancybox href="#win_1"class="button">Получить доступ</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -240,12 +251,81 @@
 						<a href="#" class="nav__link nav__link_footer">Скачать</a>
 						<a href="#" class="nav__link nav__link_footer">Отзывы</a>
 					</nav>
-					<a href="#" class="button button_footer">Получить доступ</a>
+					<a data-fancybox href="#win_1" class="button button_footer">Получить доступ</a>
 				</div>
 			</div>
 		</footer>
 
 		<!-- FOOTER EOF   -->
+
+		<!-- popap -->
+
+		<div class="popup">
+			<div class="window-open" id="win_1">
+				<div class="window-open-cont">
+					<h3 class="popup__title">
+						Стань нашим партнером
+						и&nbsp;начни зарабатывать:
+					</h3>
+					<div class="box-form">
+						<form>
+							<div class="box-field">
+								<label for="name" class="box-field__label">
+									<span class="icon icon-edit"></span>
+								</label>
+								<div class="box-field__input">
+									<input id="name" type="text" class="form-control" placeholder="Введите имя">
+								</div>
+							</div>
+							<div class="box-field">
+								<label for="email" class="box-field__label">
+									<span class="icon icon-message"></span>
+								</label>
+								<div class="box-field__input">
+									<input id="email" type="email" class="form-control" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="box-field">
+								<label for="tel" class="box-field__label">
+									<span class="icon icon-call"></span>
+								</label>
+								<div class="box-field__input">
+									<input id="tel" type="tel" class="form-control" placeholder="Номер телефона">
+								</div>
+							</div>
+							<ul class="list-check">
+								<li class="list-check__item">
+									<label for="news" class="list-check__label">
+										<input id="news" class="list-check__input" type="checkbox" name="news">
+										<span class="list-check__box">
+											<span class="icon icon-check"></span>
+										</span>
+										<span class="list-check__text">Я хочу получать новости на почтовый адрес</span>
+									</label>
+								</li>
+								<li class="list-check__item">
+									<label for="data" class="list-check__label">
+										<input checked id="data" class="list-check__input" type="checkbox" name="data">
+										<span class="list-check__box">
+											<span class="icon icon-check"></span>
+										</span>
+										<span class="list-check__text">Я согласен учавствовать в сборе данных</span>
+									</label>
+								</li>
+							</ul>
+							<div class="box-form__btn">
+								<a href="#" class="button button_2">Получить доступ</a>
+							</div>
+						</form>
+						<div class="politic">
+							<p class="politic__text">Нажимая кнопку Вы принимаете <a href="#" class="politic__link">политику&nbsp;конфиденциальности</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- popap -->
 
 	</div>		
 
