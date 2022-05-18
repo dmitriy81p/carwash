@@ -152,6 +152,11 @@ header{
 .btn-mob{
 	display: none;
 }
+@media screen and (max-width: 1430px){
+.nav__link:last-child {
+    margin-right: 0;
+}
+}
 @media screen and (max-width: 950px){
 	.nav{
 		padding-left: 0;
@@ -228,6 +233,7 @@ header{
 			&:first-child{
 				padding-top: 32px;
 			}
+
 		}
 	}
 	.btn-mob{
