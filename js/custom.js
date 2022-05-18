@@ -91,3 +91,19 @@ Fancybox.bind("[data-fancybox]", {
 
  $(window).bind('load', handler);
  $(window).bind('resize', handler);
+
+ $(document).ready(function(){
+	$('.js-send-form').submit(function() {
+		$.ajax({
+			type: 'POST',
+			url: 'feedback.php',
+			data: $(this).serialize(),
+			success: function(data) {
+				alert(data);
+				// $('.modal').removeClass('opened');
+				return false;
+			}
+		});
+		return false;
+	});
+});
