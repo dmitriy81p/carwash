@@ -40,6 +40,7 @@ header{
 	padding-right: 9rem;
 	position: relative;
 	top: 2px;
+	white-space: nowrap;
 	&__link{
 		font-size: 1.8rem;
 		font-weight: 300;
@@ -51,6 +52,11 @@ header{
 			border-bottom-color: #000;
 		}
 	}
+}
+_::-webkit-full-page-media, _:future, :root .safari_only {
+	.nav__link:last-child {
+    margin-right: 0;
+}
 }
 .button{
 	display: inline-block;
@@ -153,9 +159,7 @@ header{
 	display: none;
 }
 @media screen and (max-width: 1430px){
-.nav__link:last-child {
-    margin-right: 0;
-}
+
 }
 @media screen and (max-width: 950px){
 	.nav{
