@@ -95,7 +95,7 @@ Fancybox.bind("[data-fancybox]", {
  $(document).ready(function(){
 	$('.js-send-form').submit(function() {
 		$.ajax({
-			type: 'POST',
+			type: 'GET',
 			url: 'feedback.php',
 			data: $(this).serialize(),
 			success: function(data) {
