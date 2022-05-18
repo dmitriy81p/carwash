@@ -57,11 +57,14 @@ header{
 	border: 1px solid #E9ECF5;
 	border-radius: 6px;
 	color: #446DF6;
-	font-size: 1.6rem;
+	font-size: 16px;
 	line-height: 1;
 	background: #fff;
-	padding: 1.7rem 2.5rem 0px 2.5rem;
+	padding: 17px 15px 0px 15px;
 	height: 5rem;
+	text-align: center;
+	min-width: 170px;
+	height: 50px;
 	&:hover{
 		border-color: #446DF6;
 		color: #fff;
@@ -72,11 +75,10 @@ header{
 	color: #eee;
 	background: #446DF6;
 	border-color: #446DF6;
-	font-size: 1.7rem;
 	font-weight: 500;
-	padding: 2.3rem 5.5rem 1.5rem 5.5rem;
-	height: 6.2rem;
+	// padding: 23px 15px 5px 15px;
 	font-weight: 500;
+	min-width: 240px;
 	&:hover{
 		color: #446DF6;
 		background: #fff;
@@ -161,7 +163,16 @@ header{
 		}
 	}
 }
+@media screen and (min-width: 768px){
+.nav-mob{
+	height: auto !important;
+}
+
+}
 @media screen and (max-width: 767px) {
+	header{
+	height: auto;
+}
 	.burger{
 		display: block;
 	}
@@ -197,7 +208,7 @@ header{
 		background: #fff;
 		z-index: 99;
 		height: 100vh;
-		padding-bottom: 80px;
+		padding-bottom: 100px;
 		&.active{
 			left: 0px;
 			overflow: scroll;
@@ -233,4 +244,13 @@ header{
 		text-align: center;
 		display: block;
 	}
+.button_2{
+	min-width: 170px;
+}
+.header__btn-box{
+	padding-top: 24px;
+}
+.nav{
+	margin-bottom: 20px;
+}
 }
