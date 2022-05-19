@@ -1,6 +1,6 @@
 const lngs = {
-  en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' }
+  ru: { nativeName: 'Russian' },
+  en: { nativeName: 'English' }
 };
 
 const rerender = () => {
@@ -22,19 +22,19 @@ $(function () {
       debug: true,
       fallbackLng: 'en',
       resources: {
-        en: {
+        ru: {
           translation: {
             intro: {
-              title: 'Landing Page',
-              subTitle: 'Some subtitle'
+              title: 'Поиск ближайшей свободной автомойки и бронирование на удобное время.',
+              subTitle: 'Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.'
             }
           }
         },
-        de: {
+        en: {
           translation: {
             intro: {
-              title: 'Webseite',
-              subTitle: 'Ein Untertitel'
+              title: 'Finding the nearest free car wash and booking at a convenient time.',
+              subTitle: 'We will help save your time for more interesting activities than standing in line.'
             }
           }
         }
