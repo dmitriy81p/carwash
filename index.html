@@ -23,12 +23,13 @@
 			<div class="wrapper">
 				<div class="top-screen">
 					<div class="top-screen__info">
-						<h1>
+						<select name="language" id="languageSwitcher"></select>
+						<h1 data-i18n="intro.title">
 							Поиск ближайшей свободной автомойки и бронирование
 							на&nbsp;удобное время. <span class="icon-arrow desct"></span>
 						</h1>
 						<span class="icon icon-arrow_down mob"></span>
-						<p class="top-screen__descr">
+						<p data-i18n="intro.subTitle" class="top-screen__descr">
 							Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.
 						</p>
 						<div class="top-screen__btn">
@@ -322,8 +323,8 @@
 								</li>
 							</ul>
 							<div class="box-form__btn">
-								<!-- <input type="submit" class="button button_2" value="Получить доступ"> -->
-								<a href="#" onclick="document.getElementById('js-send-form').submit(); return false;" class="button button_2">Получить доступ</a>
+								<input type="submit" class="button button_2" value="Получить доступ">
+								<!-- <a href="#" onclick="document.getElementById('js-send-form').submit(); return false;" class="button button_2">Получить доступ</a> -->
 							</div>
 						</form>
 						<div class="politic">
@@ -346,6 +347,10 @@
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
 	<script src="js/components/slick.js"></script>
 	<script src="js/components/fancybox.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+	<script src="js/i18n.js"></script>
 	<script src="js/custom.js" ></script>
 </body>
 </html>
