@@ -613,6 +613,9 @@ img{
 		padding: 25px 20px 0 20px;
 	}
 }
+input.button{
+	padding-top: 0px;
+}
 @media screen and (max-width: 767px){
 	.mob{
 		display: block;
@@ -662,9 +665,6 @@ img{
 			width: auto;
 			margin: 0 auto;
 		}
-	}
-	.top-screen{
-		// background-image: url(../img/8-1.png);
 	}
 	.top-screen__decor-tel{
 		position: relative;
