@@ -4,7 +4,7 @@
 
 $sites = array(
 
-"pl" => "/index-pl.php",
+"ro" => "/index-ro.php",
 
 "en" => "/index-en.php",
 
@@ -18,13 +18,13 @@ $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); // вырезаем пе
 
 // проверяем язык
 
-$acceptLang = ['pl', 'en', 'ru'];//Ваши языки.
+$acceptLang = ['ro', 'en', 'ru'];//Ваши языки.
 
 // перенаправление на субдомен
 
-$lang = in_array($lang, $acceptLang) ? $lang : 'pl';//Сравниваем язык браузера с имеющимися, если нет совпадения, по умолчанию английский язык(можете поменять).
+$lang = in_array($lang, $acceptLang) ? $lang : 'ro';//Сравниваем язык браузера с имеющимися, если нет совпадения, по умолчанию румынский язык(можете поменять).
 
-$lang === 'pl' ? '' : (in_array($lang, $acceptLang) ? header('Location: ' . $sites[$lang]) : '');//Редирект на другие языки, если их нет, пользователь остается на английском.
+$lang === 'ro' ? '' : (in_array($lang, $acceptLang) ? header('Location: ' . $sites[$lang]) : '');//Редирект на другие языки, если их нет, пользователь остается на румынском.
 
 header('Location: ' . $sites[$lang]);
 

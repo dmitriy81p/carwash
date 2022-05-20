@@ -26,7 +26,7 @@
 					<div class="top-screen__info">
 						<h1>
 							Поиск ближайшей свободной автомойки и бронирование
-							на&nbsp;удобное время. <span class="icon-arrow desct"></span>
+							на&nbsp;удобное время.<span class="icon-arrow desct"></span>
 						</h1>
 						<span class="icon icon-arrow_down mob"></span>
 						<p class="top-screen__descr">
