@@ -935,25 +935,28 @@ img{
 		top: 2px;
 	}
 	.list-check__item {
-    margin-bottom: 10px;
-}
-.box-form__btn{
-	margin-top: 39px;
-}
-.politic__text{
-	text-align: center;
-	line-height: 1.1;
-}
-.box-field__label .icon:before {
-    font-size: 15px;
-}
-.politic {
-    margin-top: 33px;
-}
-.fancybox__slide{
-	padding-left: 0;
-	padding-right: 0;
-}
+		margin-bottom: 10px;
+	}
+	.box-form__btn{
+		margin-top: 39px;
+	}
+	.politic__text{
+		text-align: center;
+		line-height: 1.1;
+	}
+	.box-field__label .icon:before {
+		font-size: 15px;
+	}
+	.politic {
+		margin-top: 33px;
+	}
+	.fancybox__slide{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	input.button {
+		padding-top: 13px;
+	}
 }
 @media screen and (max-width: 640px){
 	.start__img{
