@@ -4,11 +4,11 @@
 
 $sites = array(
 
-"ro" => "/index-ro.php",
+"ro" => "/ro/",
 
-"en" => "/index-en.php",
+"en" => "/en/",
 
-"ru" => "/index-ru.php",
+"ru" => "/ru/",
 
 );
 

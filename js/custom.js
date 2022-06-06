@@ -18,8 +18,6 @@ if($('.slider').length) {
 		nextArrow: '<div class="slick-button slick-button_next"><span class="icon icon-arrow-next"></span></div>',
 	});
 };
-
-
 /* viewport width */
 function viewport(){ 
 	var e = window, 
@@ -32,7 +30,6 @@ function viewport(){
 	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
 };
 /* viewport width */
-
 /* placeholder */	
 $(function(){
 	$('input, textarea').each(function(){
@@ -41,62 +38,45 @@ $(function(){
 		$(this).focusout(function(){$(this).attr('placeholder', placeholder);});
 	});
 });
-
-
 /* placeholder */
-
 Fancybox.bind("[data-fancybox]", {
-  autoFocus: false
+	autoFocus: false
 });
-
-/*mob-menu*/
-    $('.js-touch-menu').click(function() {
-        $(this).toggleClass('active'),
-        $('.nav-mob').toggleClass('active');
-        $('body').toggleClass('no-scroll');
-        return false;
-    });
-
-
-
-	
-	
-	/* mask phone */
- // if ($('.js-mask').length) {
- // 	$('.js-mask').each(function() {
- // 		$(this).mask("+7 (999) 999 99 99");
- // 	});
- // }
- /* mask phone */
-
-
+// mob-menu
+$('.js-touch-menu').click(function() {
+	$(this).toggleClass('active'),
+	$('.nav-mob').toggleClass('active');
+	$('body').toggleClass('no-scroll');
+	return false;
+});
+// scroll
+$('.js-scroll').click(function() {
+	$('.js-touch-menu').removeClass('active')
+	$('.nav-mob').removeClass('active');
+	$('body').removeClass('no-scroll');
+	var target = $(this).attr('href');
+	$('html, body').animate({
+		scrollTop: $(target).offset().top
+	}, 1000);
+	return false;
+});
  /* components */
-
-
-
-
  var handler = function(){
-
  	var height_footer = $('footer').height();	
  	var height_header = $('header').height();		
-
  	var viewport_wid = viewport().width;
- 	
  	var viewport_height = viewport().height;
- 	 $('.nav-mob').css({
-        height: viewport_height + 'px'
-    });
-// console.log("viewport_height", viewport_height);
- }
-
- $(window).bind('load', handler);
- $(window).bind('resize', handler);
-
- $(document).ready(function(){
+ 	$('.nav-mob').css({
+ 		height: viewport_height + 'px'
+ 	});
+}
+$(window).bind('load', handler);
+$(window).bind('resize', handler);
+$(document).ready(function(){
 	$('.js-send-form').submit(function() {
 		$.ajax({
-			type: 'GET',
-			url: 'feedback.php',
+			type: 'POST',
+			url: '../feedback.php',
 			data: $(this).serialize(),
 			success: function(data) {
 				alert(data);

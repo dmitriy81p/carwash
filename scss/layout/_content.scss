@@ -244,7 +244,7 @@ img{
 	color: #141b41;
 }
 .app{
-	margin-top: 17.9rem;
+	padding-top: 17.9rem;
 	&__box{
 		background: #446DF6;
 		border-radius: 2rem;
@@ -613,9 +613,6 @@ img{
 		padding: 25px 20px 0 20px;
 	}
 }
-input.button{
-	padding-top: 0px;
-}
 @media screen and (max-width: 767px){
 	.mob{
 		display: block;
@@ -665,6 +662,9 @@ input.button{
 			width: auto;
 			margin: 0 auto;
 		}
+	}
+	.top-screen{
+		// background-image: url(../img/8-1.png);
 	}
 	.top-screen__decor-tel{
 		position: relative;
@@ -784,7 +784,7 @@ input.button{
 		margin-top: 32px;
 	}
 	.app{
-		margin-top: 50px;
+		padding-top: 50px;
 		width: calc(100% + 40px);
 		margin-left: -20px;
 
